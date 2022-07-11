@@ -15,8 +15,11 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         number = options['number']
+        obj = []
         for i in range(number):
-            User.objects.bulk_create([User(username=fake.name(),
-                                           email=fake.email(),
-                                           password=make_password(str(fake.password())))])
+            users = User(username=fake.name(),
+                         email=fake.email(),
+                         password=make_password(str(fake.password())))
+            obj.append(users)
+        User.objects.bulk_create(obj)
         self.stdout.write(self.style.SUCCESS('Create %s users successfully!' % number))
