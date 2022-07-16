@@ -70,5 +70,23 @@
         "groups": [],
         "user_permissions": []
     }
+},
+    {
+  "model": "triangle.person",
+  "pk": 1,
+  "fields": {
+    "first_name": "Chris",
+    "last_name": "Pratt1",
+    "email": "example@mail.com"
+  }
+},
+{
+  "model": "triangle.person",
+  "pk": 2,
+  "fields": {
+    "first_name": "Tom",
+    "last_name": "Hiddleston",
+    "email": "exaple2@mail.com"
+  }
 }
 ]
