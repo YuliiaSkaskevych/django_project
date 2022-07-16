@@ -1,4 +1,5 @@
 My second Django project
-1. Added FLAKE8
+1. Added FLAKE8 (hw6)
 2. Done hw #7
-3. Created Triangle app
+3. Created Triangle app (hw8)
+4. Create Django model form (hw10)
