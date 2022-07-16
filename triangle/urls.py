@@ -1,8 +1,12 @@
 from django.urls import path
 
-from triangle.views import triangle_calculate
+from triangle.views import base, form, new_person, triangle_calculate, update
 
 app_name = 'triangle'
 urlpatterns = [
-    path('', triangle_calculate, name='index')
+    path('', base, name="base"),
+    path('triangle/', triangle_calculate, name='index'),
+    path('person/', new_person, name="new_person"),
+    path('person/<int:pk>/', update, name="update"),
+    path('person/select/', form, name='form')
 ]
