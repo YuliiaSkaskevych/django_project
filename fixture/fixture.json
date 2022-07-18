@@ -1,92 +1,56 @@
 [
 {
-    "model": "auth.user",
-    "pk": 1,
-    "fields": {
-        "password": "pbkdf2_sha256$320000$eBJmr9RCNszRuFukKxaepJ$qGXhI2pr3IgsEBfB2/DMJWwy08FFVAEqYEjhaMPrguo=",
-        "last_login": "2022-07-05T17:22:46.823Z",
-        "is_superuser": true,
-        "username": "admin",
-        "first_name": "",
-        "last_name": "",
-        "email": "admin@example.com",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2022-07-05T16:55:59.158Z",
-        "groups": [],
-        "user_permissions": []
-    }
+      "model": "triangle.logs",
+      "pk": 7,
+      "fields": {
+            "path": "/person/",
+            "method": "GET",
+            "timestamp": "2022-07-16T14:39:05.540Z"
+      }
 },
 {
-    "model": "auth.user",
-    "pk": 2,
-    "fields": {
-        "password": "pbkdf2_sha256$320000$UmtyRcPWsSCsc4FoBkCc5B$dbnmNbB2c6pKPc9Ii/YgatobQrkZAXCIYvvN8iPAoeM=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "User1",
-        "first_name": "Chris",
-        "last_name": "Hemsworth",
-        "email": "thor@example.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2022-07-05T17:24:26Z",
-        "groups": [],
-        "user_permissions": []
-    }
+      "model": "triangle.logs",
+      "pk": 8,
+      "fields": {
+            "path": "/person/",
+            "method": "POST",
+            "timestamp": "2022-07-16T14:39:19.629Z"
+      }
 },
 {
-    "model": "auth.user",
-    "pk": 3,
-    "fields": {
-        "password": "pbkdf2_sha256$320000$Vkdg9ZkDPzdJ52gHoW2t85$xJ4lTpmhMqQvCy1968Y6OhRscEUZo/bpwvIFPXBDJfg=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "User2",
-        "first_name": "Heath",
-        "last_name": "Ledger",
-        "email": "joker@example.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2022-07-05T17:27:57Z",
-        "groups": [],
-        "user_permissions": []
-    }
+      "model": "triangle.logs",
+      "pk": 10,
+      "fields": {
+            "path": "/person/select/",
+            "method": "GET",
+            "timestamp": "2022-07-16T14:39:20.707Z"
+      }
 },
 {
-    "model": "auth.user",
-    "pk": 4,
-    "fields": {
-        "password": "pbkdf2_sha256$320000$7ThWholePKl7rHbSyQwB3h$4whS4wNsbbOCUqQLRdqdBpshR9sdbdKdrdZq4j42Was=",
-        "last_login": null,
-        "is_superuser": false,
-        "username": "User3",
-        "first_name": "John",
-        "last_name": "Cooper",
-        "email": "skillet@example.com",
-        "is_staff": false,
-        "is_active": true,
-        "date_joined": "2022-07-05T17:28:25Z",
-        "groups": [],
-        "user_permissions": []
-    }
-},
-    {
-  "model": "triangle.person",
-  "pk": 1,
-  "fields": {
-    "first_name": "Chris",
-    "last_name": "Pratt1",
-    "email": "example@mail.com"
-  }
+      "model": "triangle.logs",
+      "pk": 11,
+      "fields": {
+            "path": "/person/5/",
+            "method": "GET",
+            "timestamp": "2022-07-16T14:39:22.145Z"
+      }
 },
 {
-  "model": "triangle.person",
-  "pk": 2,
-  "fields": {
-    "first_name": "Tom",
-    "last_name": "Hiddleston",
-    "email": "exaple2@mail.com"
-  }
+      "model": "triangle.logs",
+      "pk": 12,
+      "fields": {
+            "path": "/person/5/",
+            "method": "POST",
+            "timestamp": "2022-07-16T14:39:25.201Z"
+      }
+},
+{
+      "model": "triangle.logs",
+      "pk": 34,
+      "fields": {
+            "path": "/triangle/",
+            "method": "GET",
+            "timestamp": "2022-07-16T20:24:13.423Z"
+      }
 }
 ]
