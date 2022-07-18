@@ -11,5 +11,5 @@ class LogMiddleware:
 
     def process_view(self, request, view_func, view_args, view_kwargs):
 
-        if 'admin' not in request.path:
+        if not request.path.startswith('/admin'):
             Logs.objects.create(path=request.path, method=request.method)

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from triangle.views import base, select, new_person, triangle_calculate, update
+from triangle.views import base, new_person, select, triangle_calculate, update
 
 app_name = 'triangle'
 urlpatterns = [
