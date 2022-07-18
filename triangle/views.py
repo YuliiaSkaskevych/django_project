@@ -28,9 +28,9 @@ def base(request):
     return render(request, 'triangle/base.html')
 
 
-def form(request):
+def select(request):
     users = Person.objects.all()
-    return render(request, 'triangle/form.html', {'users': users, })
+    return render(request, 'triangle/select.html', {'users': users, })
 
 
 def new_person(request):
