@@ -1,56 +1,251 @@
 [
 {
-      "model": "triangle.logs",
-      "pk": 7,
-      "fields": {
-            "path": "/person/",
-            "method": "GET",
-            "timestamp": "2022-07-16T14:39:05.540Z"
-      }
+               "model": "catalog.author",
+               "pk": 1,
+               "fields": {
+                              "first_name": "Terry",
+                              "last_name": "Pratchett",
+                              "age": "63"
+               }
 },
 {
-      "model": "triangle.logs",
-      "pk": 8,
-      "fields": {
-            "path": "/person/",
-            "method": "POST",
-            "timestamp": "2022-07-16T14:39:19.629Z"
-      }
+               "model": "catalog.author",
+               "pk": 2,
+               "fields": {
+                              "first_name": "Tess",
+                              "last_name": "Herritsen",
+                              "age": "45"
+               }
 },
 {
-      "model": "triangle.logs",
-      "pk": 10,
-      "fields": {
-            "path": "/person/select/",
-            "method": "GET",
-            "timestamp": "2022-07-16T14:39:20.707Z"
-      }
+               "model": "catalog.author",
+               "pk": 3,
+               "fields": {
+                              "first_name": "Neil",
+                              "last_name": "Gaiman",
+                              "age": "58"
+               }
 },
 {
-      "model": "triangle.logs",
-      "pk": 11,
-      "fields": {
-            "path": "/person/5/",
-            "method": "GET",
-            "timestamp": "2022-07-16T14:39:22.145Z"
-      }
+               "model": "catalog.author",
+               "pk": 4,
+               "fields": {
+                              "first_name": "Boris&Arkady ",
+                              "last_name": "Strugatsky",
+                              "age": "61"
+               }
 },
 {
-      "model": "triangle.logs",
-      "pk": 12,
-      "fields": {
-            "path": "/person/5/",
-            "method": "POST",
-            "timestamp": "2022-07-16T14:39:25.201Z"
-      }
+               "model": "catalog.author",
+               "pk": 5,
+               "fields": {
+                              "first_name": "Agatha",
+                              "last_name": "christie",
+                              "age": "75"
+               }
 },
 {
-      "model": "triangle.logs",
-      "pk": 34,
-      "fields": {
-            "path": "/triangle/",
-            "method": "GET",
-            "timestamp": "2022-07-16T20:24:13.423Z"
-      }
+               "model": "catalog.place",
+               "pk": 1,
+               "fields": {
+                              "country": "Ukraine",
+                              "city": "Kyiv",
+                              "address": "Arsenalna 3"
+               }
+},
+{
+               "model": "catalog.place",
+               "pk": 2,
+               "fields": {
+                              "country": "Ukraine",
+                              "city": "Lviv",
+                              "address": "Heroiv Ukrainy 2"
+               }
+},
+{
+               "model": "catalog.place",
+               "pk": 3,
+               "fields": {
+                              "country": "Great Britain",
+                              "city": "London",
+                              "address": "Emprorium 8"
+               }
+},
+{
+               "model": "catalog.publisher",
+               "pk": 1,
+               "fields": {
+                              "name": "Obolon News"
+               }
+},
+{
+               "model": "catalog.publisher",
+               "pk": 2,
+               "fields": {
+                              "name": "Staryi Lev"
+               }
+},
+{
+               "model": "catalog.publisher",
+               "pk": 3,
+               "fields": {
+                              "name": "Discworld"
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 1,
+               "fields": {
+                              "title": "Equal Rites",
+                              "publisher": 3,
+                              "price": "250",
+                              "authors": [
+                                             1
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 2,
+               "fields": {
+                              "title": "Monday starts on Saturday",
+                              "publisher": 1,
+                              "price": "200",
+                              "authors": [
+                                             4
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 3,
+               "fields": {
+                              "title": "Murder on the Nile",
+                              "publisher": 2,
+                              "price": "300",
+                              "authors": [
+                                             5
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 4,
+               "fields": {
+                              "title": "The Surgeon",
+                              "publisher": 1,
+                              "price": "245",
+                              "authors": [
+                                             2
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 5,
+               "fields": {
+                              "title": "Good Omens",
+                              "publisher": 3,
+                              "price": "335",
+                              "authors": [
+                                             3
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 6,
+               "fields": {
+                              "title": "Lords and Ladies",
+                              "publisher": 1,
+                              "price": "275",
+                              "authors": [
+                                             1
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 7,
+               "fields": {
+                              "title": "Sandman",
+                              "publisher": 2,
+                              "price": "185",
+                              "authors": [
+                                             3
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 8,
+               "fields": {
+                              "title": "The Assistant",
+                              "publisher": 1,
+                              "price": "225",
+                              "authors": [
+                                             2
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 9,
+               "fields": {
+                              "title": "Wyrd Sisters",
+                              "publisher": 3,
+                              "price": "315",
+                              "authors": [
+                                             1
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 10,
+               "fields": {
+                              "title": "Roadside picnic",
+                              "publisher": 2,
+                              "price": "265",
+                              "authors": [
+                                             4
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 11,
+               "fields": {
+                              "title": "Good Omens",
+                              "publisher": 3,
+                              "price": "265",
+                              "authors": [
+                                             3
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 12,
+               "fields": {
+                              "title": "Lords and Ladies",
+                              "publisher": 1,
+                              "price": "265",
+                              "authors": [
+                                             1,
+                                             2,
+                                             3
+                              ]
+               }
+},
+{
+               "model": "catalog.book",
+               "pk": 13,
+               "fields": {
+                              "title": "Neverwhere",
+                              "publisher": 1,
+                              "price": "275",
+                              "authors": []
+               }
 }
 ]
